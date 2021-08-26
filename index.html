@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1 id="title" class="text-center"> Tell me about your Favourite Poet.</h1>
+    <p id="description" class="text-center">
+      This is a survey where you tell us about the Poet you're inspired by. I would like to know about your thoughts.
+    </p>
+    <form id="survey-form" >
+
+      <label id="name-label">Name: </label>
+      <input type="text" placeholder="Your Name here" class="form-control" id="name" name="name" required> <br>
+
+      <label id="email-label">Email: </label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="Email-Id" required> <br>
+
+      <label id="number-label">Number: </label>
+      <input type="number" name="number" placeholder="Number here" class="form-control" min="0" max="11" id="number" required>
+
+      <div class="form-group">
+      <p>Which one is your favorite Poet?</p>
+
+      <select id="dropdown" name="Poets" class="form-control">
+          <option disabled selected value>Select your favorite</option>
+          <option value="allama iqbal">Allama Iqbal</option>
+          <option value="mirza ghalib">Mirza Ghalib</option>
+          <option value="hafeez jalandri">Hafeez Jalandri</option>
+          <option value="other">Other</option>
+      </select>
+
+
+        <br>
+        <div>
+          <label id="language-label">Languages: </label>
+          <label><input type="radio" class="input-radio" name="fav_language" value="urdu">Urdu</label>
+          <label><input type="radio" class="input-radio" name="fav_language" value="english">English</label>
+          <label><input type="radio" class="input-radio" name="fav_language" value="punjabi">Punjabi</label>
+        </div>
+
+
+        <div>
+          <label id="transport-type-label">Transport Type: </label>
+          <label><input type="checkbox" class="input-checkbox" name="vehicle" value="Bike">I have a bike.</label>
+          <label><input type="checkbox" class="input-checkbox" name="vehicle" value="Car">I have a car.</label>
+          <label><input type="checkbox" class="input-checkbox" name="vehicle" value="Boat">I have a boat.</label>
+      </div>
+<br>
+        <div class="form-group">
+        <label id="additional-comment-label">Any comments or suggestions? </label>
+        <textarea class="input-textarea" placeholder="Additional Comment"></textarea>
+      </div>
+        <div id="submit-padding">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+      </form>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+      </body>
+      </html>
